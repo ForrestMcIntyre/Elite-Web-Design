@@ -1,0 +1,215 @@
+/*
+Theme Name: Elite Web Design
+Description: Business & Portfolio Website.
+Version: 1
+Author: Elite Web Design
+Author URI: http://www.elitewebdesign.me/
+*/
+/* CSS Reset */
+body,
+body * {
+  margin: 0;
+  padding: 0;
+}
+/* Restoring Basic Styles */
+html {
+  background-color: #f1f1f1;
+}
+body {
+  font-family: "nimbus-sans", /*Helvetica,*/ serif;
+  font-size: 100%;
+  line-height: 1.3em;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+  -moz-text-decoration-style: dashed;
+  text-decoration-style: dashed;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: .25em 0 1em 0;
+}
+ul {
+  margin-left: 1.25em;
+}
+ul li {
+  margin-bottom: .5em;
+}
+ol {
+  margin-left: 1.75em;
+}
+ol li {
+  margin-bottom: .5em;
+}
+a img {
+  border: none;
+}
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-bottom: 1.125em;
+}
+blockquote {
+  margin: 1em 2.25em;
+  border-left: 1px solid black;
+  padding: 1%;
+  padding-left: 30px;
+}
+blockquote:before {
+  position: relative;
+  content: "“";
+  font-size: 4em;
+  top: 17px;
+  right: 25px;
+  margin-bottom: -20px;
+  display: block;
+}
+/* Navigation */
+#pageid,
+#toggle {
+  display: none;
+}
+.main-menu ul {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.main-menu ul li {
+  margin: 0;
+  float: left;
+  list-style: none;
+  width: 20%;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.main-menu ul li:hover,
+.main-menu ul li:focus {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #ebebeb;
+}
+.main-menu ul li:hover ul,
+.main-menu ul li:focus ul {
+  display: block;
+  width: 20%;
+}
+.main-menu ul li a {
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+}
+.main-menu ul ul {
+  border-top: 1px solid black;
+  display: none;
+  position: absolute;
+  box-shadow: 0px 5px 5px #888;
+}
+.main-menu ul ul li {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
+/* Page Styles */
+.contain {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+header {
+  background-color: #ffffff;
+  padding: 20px 0 0 0;
+  clear: both;
+  box-shadow: 0px 5px 5px #888;
+}
+header h1 {
+  margin: 0;
+}
+header h1 span {
+  display: none;
+}
+header a img {
+  float: left;
+  width: 31.27659574468085%;
+  margin-bottom: 20px;
+}
+header .contain {
+  max-width: 1080px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main {
+  margin-top: 20px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  width: 63.82978723404255%;
+  padding: 1.06382978723404%;
+  float: left;
+}
+aside {
+  margin-top: 20px;
+  width: 31.27659574468085%;
+  float: right;
+}
+aside .widget {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  padding: 1.06382978723404%;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+footer {
+  text-align: center;
+  clear: both;
+}
+/* Tablet 800px to 601px */
+/* End Tablet */
+/* Large Mobile 600px to 451px */
+/* End Large Mobile */
+/* Large Mobile 450px or below */
+@media screen and (max-width: 450px) {
+  header h1 {
+    text-align: center;
+  }
+  header h1 a img {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    float: none;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  aside {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+  #pageid,
+  #toggle {
+    display: block;
+  }
+}
+/* End Small Mobile */
