@@ -1,14 +1,19 @@
-<?php get_header(); ?>
+<?php get_header(); ?><h2>About the Designer</h2>
+	<article class="about-me">
+	<img src="<?php bloginfo('template_url'); ?>/images/about-me.jpg">
+	
+	<p>Elite Web Design was founded by Forrest McIntyre in early 2015. As a recent graduate from Seattle Central College's Web Design and Development program, he is building his clientle and enjoys creating websites for small businesses.<span class="read-more"><a href="about">Read More</a></span></p>
+	</article>
+	<h2>Recent Blog Posts</h2>
 			<!-- Start the Loop. -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<article class="post post-<?php the_ID(); ?>">
-	<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+	<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 	<p><small>
 	<span class="date"><?php the_date(); ?></span>
-	<span class="author"><?php the_author(); ?></span>
 	<span class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></span>
 	</small></p>
-	<p class="entry"><?php the_content(); ?></p>
+	<?php the_content(); ?>
 
 
 <?php endwhile; else : ?>
