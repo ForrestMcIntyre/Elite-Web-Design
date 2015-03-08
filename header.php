@@ -7,6 +7,7 @@
 	<title>Elite Web Design - Seattle, WA</title>
 	<meta charset="utf8">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/font-awesome/css/font-awesome.min.css">
 
 	<script src="//use.typekit.net/xgz8fdf.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
@@ -22,8 +23,7 @@
 			<!-- for screen readers -->
 			<a href="<?php echo get_option('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/elite-logo.png" alt="<?php bloginfo('name') ?>"></a>
 			</h1>
-			<img id="toggle" src="<?php bloginfo('template_url'); ?>/images/img-toggle.png" width="25" height="25"	alt="Toggle Menu">
-			<h1 id="pageid"></h1>
+			<div id="toggle"><span class="fa fa-navicon"></span>&nbsp;MENU</div>
 		</div>
 		<!-- Begin Navigation -->
 		<nav class="contain main-menu">
