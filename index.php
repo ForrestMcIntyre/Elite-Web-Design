@@ -1,10 +1,4 @@
-<?php get_header(); ?><h2>About the Designer</h2>
-	<article class="about-me">
-	<img src="<?php bloginfo('template_url'); ?>/images/about-me.jpg">
-	
-	<p>Elite Web Design was founded by Forrest McIntyre in early 2015. As a recent graduate from Seattle Central College's Web Design and Development program, he is building his clientle and enjoys creating websites for small businesses.<span class="read-more"><a href="about">Read More</a></span></p>
-	</article>
-	<h2>Recent Blog Posts</h2>
+<?php get_header(); ?><h2>Blog</h2>
 			<!-- Start the Loop. -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<article class="post post-<?php the_ID(); ?>">

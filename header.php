@@ -27,24 +27,7 @@
 		</div>
 		<!-- Begin Navigation -->
 		<nav class="contain main-menu">
-		<?php wp_nav_menu( 'main_menu' ); ?>
-			<!-- <ul>
-				<li><a href="#">About</a>
-				<li><a href="#">Services</a>
-					<ul>
-						<li><a href="#">SEO</a>
-						<li><a href="#">Web Design</a>
-						<li><a href="#">Web Development</a>
-					</ul>
-				<li><a href="#">Portfolio</a>
-					<ul>
-						<li><a href="#">NECN</a>
-						<li><a href="#">InkedandProud</a>
-						<li><a href="#">Gump Graphics</a>
-					</ul>
-				<li><a href="#">Blog</a>
-				<li><a href="#">Contact</a>
-			</ul> -->
+			<?php wp_nav_menu( 'main_menu' ); ?>
 		</nav>
 		<!-- End Navigation -->
 	</header>
